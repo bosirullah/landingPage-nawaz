@@ -92,7 +92,10 @@ export default function AboutPage() {
                         >
                             Dr. Nawaz Sarif
                         </Typography>
-                        <Typography sx={{ fontSize: "21px" }}>
+                        <Typography
+                            align={isSmallScreen ? "center" : "left"}
+                            sx={{ fontSize: "21px" }}
+                        >
                             (General Homoeopathic Physician)
                         </Typography>
                         <Typography>
@@ -114,9 +117,10 @@ export default function AboutPage() {
                                     <Divider
                                         orientation="vertical"
                                         flexItem
-                                        sx={{ mx: 1 }}
+                                        sx={{ mr: 2 }}
                                     />
                                 )}
+                                {isSmallScreen && <br />}
                                 Regd. No. - 34680 (WBCHM)
                             </Box>
                         </Typography>
