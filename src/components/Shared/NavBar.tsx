@@ -20,6 +20,7 @@ import { MyContext } from "@/context";
 import { showSuccessToast } from "../../utils/toasts/Toast";
 import NestedList from "../ListPage";
 import Image from "next/image";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 const initialPages = [
     { label: "Home", path: "/" },
@@ -32,7 +33,10 @@ const settings = ["Logout"];
 
 function ResponsiveAppBar() {
     const context = useContext(MyContext);
+    const theme = useTheme();
     const router = useRouter();
+
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
     if (!context) {
         throw new Error("LoginPage must be used within a MyProvider");
@@ -103,8 +107,17 @@ function ResponsiveAppBar() {
         : initialPages;
 
     return (
-        <AppBar position="sticky" sx={{ background: "white", margin: 0 }}>
-            <Container maxWidth="xl">
+        <AppBar
+            position="sticky"
+            sx={{
+                background: "white",
+                m: 0,
+            }}
+        >
+            <Container
+                maxWidth="xl"
+                sx={{ ...(isSmallScreen ? { p: 1 } : {}) }}
+            >
                 <Toolbar disableGutters>
                     <Typography
                         variant="h6"
@@ -191,7 +204,7 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
 
-                    <Typography
+                    {/* <Typography
                         variant="h5"
                         noWrap
                         sx={{
@@ -225,7 +238,7 @@ function ResponsiveAppBar() {
                                 }}
                             />
                         </Link>
-                    </Typography>
+                    </Typography> */}
                     <Box
                         sx={{
                             flexGrow: 1,

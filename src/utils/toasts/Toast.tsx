@@ -1,10 +1,11 @@
 // src/utils/toast.ts
-
+"use client";
 import { toast, ToastOptions } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const defaultOptions: ToastOptions = {
     position: "bottom-right",
+    // theme: "dark",
     autoClose: 3000,
     hideProgressBar: false,
     closeOnClick: true,

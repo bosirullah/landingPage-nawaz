@@ -16,6 +16,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/motion";
 import { useInView } from "@/utils/customHooks/useInView";
+import Image from "next/image";
 
 export default function AboutPage() {
     const router = useRouter();
@@ -68,16 +69,18 @@ export default function AboutPage() {
                         columnGap: "50px",
                     }}
                 >
-                    <Box
-                        component="img"
+                    <Image
                         src="/assets/nawazSharif.jpeg"
                         alt="nawazImg"
-                        sx={{
-                            width: isSmallScreen ? "70%" : "50%",
-                            maxHeight: "400px",
+                        width={580}
+                        height={430}
+                        style={{
+                            width: isSmallScreen ? "85%" : "50%",
+                            height: "420px",
                             objectFit: "cover",
                             borderRadius: "20px",
-                            boxShadow: 5,
+                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
+                            maxHeight: "430px",
                             marginBottom: isSmallScreen ? 3 : 0,
                         }}
                     />

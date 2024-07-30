@@ -12,6 +12,7 @@ import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, zoomIn } from "@/utils/motion";
 import { useInView } from "@/utils/customHooks/useInView";
+import Image from "next/image";
 
 // Define the props for the TestimonialCard component
 interface TestimonialCardProps {
@@ -59,9 +60,14 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
                             <Avatar
                                 sx={{ bgcolor: "#e97142" }}
                                 aria-label="testimonial"
-                                src={imgPath}
                             >
-                                {avatar}
+                                <Image
+                                    src={imgPath}
+                                    alt={avatar}
+                                    fill
+                                    style={{ objectFit: "cover" }}
+                                    sizes="(max-width: 392px) 100vw, (max-width: 600px) 50vw, (max-width: 1200px) 33vw"
+                                />
                             </Avatar>
                         }
                         action={

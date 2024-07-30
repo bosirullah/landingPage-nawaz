@@ -19,6 +19,7 @@ import { useInView } from "@/utils/customHooks/useInView";
 import ContactBtn from "./Shared/buttons/ContactBtn";
 import FormDialogContact from "./Contact";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function ChambersPage() {
     const router = useRouter();
@@ -162,7 +163,7 @@ export default function ChambersPage() {
                             changeStyle={true}
                         />
                     </Box>
-                    <Box
+                    {/* <Box
                         component="img"
                         src="/assets/nawazSharif2.jpeg"
                         alt="nawazImg"
@@ -172,6 +173,21 @@ export default function ChambersPage() {
                             objectFit: "cover",
                             borderRadius: "20px",
                             boxShadow: 5,
+                            marginBottom: isSmallScreen ? 3 : 0,
+                        }}
+                    /> */}
+                    <Image
+                        src="/assets/nawazSharif2.jpeg"
+                        alt="nawazImg"
+                        priority
+                        width={580}
+                        height={430}
+                        style={{
+                            width: isSmallScreen ? "85%" : "55%",
+                            objectFit: "cover",
+                            borderRadius: "20px",
+                            boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.5)",
+                            maxHeight: "400px",
                             marginBottom: isSmallScreen ? 3 : 0,
                         }}
                     />
