@@ -98,7 +98,7 @@ export default function SimpleSlider() {
                 <Box sx={{ padding: "10px 0" }}>
                     <TestimonialCard
                         name="Kiran Kumar Datta"
-                        date="July 31, 2024"
+                        date="June 17, 2024"
                         title="Exceptional Care"
                         content="Your exceptional care, professionalism, attention to detail, and compassionate approach have greatly improved my health and well-being. Thank you for always listening and addressing my concerns."
                         avatar="K"
@@ -118,7 +118,7 @@ export default function SimpleSlider() {
                 <Box sx={{ padding: "10px 0" }}>
                     <TestimonialCard
                         name="Sahida Rahman"
-                        date="August 01, 2024"
+                        date="July 15, 2024"
                         title="Gentle Care"
                         content="Nice services! The doctor’s gentle behavior and thorough care made me feel comfortable. I am now better from my problem and can live a healthier and happier life. Highly recommended!"
                         avatar="S"
@@ -128,7 +128,7 @@ export default function SimpleSlider() {
                 <Box sx={{ padding: "10px 0" }}>
                     <TestimonialCard
                         name="Paramita Basu"
-                        date="August 3, 2024"
+                        date="July 27, 2024"
                         title="Wonderful Experience"
                         content="Dr. Nawaz Sarif is not only a great doctor but also a wonderful person. His homeopathic treatments are highly effective. I highly recommend visiting him for compassionate and thorough care."
                         avatar="M"
