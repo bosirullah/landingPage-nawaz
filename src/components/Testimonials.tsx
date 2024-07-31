@@ -87,8 +87,7 @@ export default function SimpleSlider() {
                 maxWidth="700px"
                 margin="30px auto"
                 fontSize="40px"
-                // paddingTop="100px"
-
+                letterSpacing={2}
                 color="white"
             >
                 Lets See our Patients feedback

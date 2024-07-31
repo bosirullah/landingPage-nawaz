@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap");
 /* globals.css */
-@import "~react-toastify/dist/ReactToastify.css";
 
 * {
     margin: 0;
     padding: 0;
-    /* font-family: "Playwrite At"; */
-    /* font-family: "Playwrite AT", sans-serif; */
-    /* box-sizing: border-box; */
-    /* margin: 10px; */
+    /* font-family: "Montserrat"; */
     color: black;
+    font-display: swap;
 }
 
 a {

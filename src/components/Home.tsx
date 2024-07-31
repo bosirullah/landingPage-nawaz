@@ -50,6 +50,7 @@ export default function Home() {
                         color: "white",
                         fontSize: "3.5rem ",
                         fontWeight: "bold",
+                        letterSpacing: 2,
                     }}
                 >
                     Dr. Nawaz&apos;s Homoeopathy Health Care
