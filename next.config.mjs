@@ -1,5 +1,19 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    async headers() {
+        return [
+            {
+                source: "/:path*", // Apply to all routes
+                headers: [
+                    {
+                        key: "Cache-Control",
+                        value: "max-age=31536000", // Cache for one year
+                    },
+                ],
+            },
+        ];
+    },
+};
 
 export default nextConfig;
 
