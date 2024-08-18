@@ -25,7 +25,8 @@ export default function AboutPage() {
     const [setRef, inView] = useInView({ threshold: 0.1 });
 
     const handleAboutButttonClick = () => {
-        router.push("/About");
+        console.log("hello")
+        router.push("/aboutDetails");
     };
 
     const listItemStyles = () => ({
@@ -39,10 +40,11 @@ export default function AboutPage() {
             display: "inline-block",
             width: "10px",
             height: "10px",
-            borderRadius: "50%",
+            borderRadius: "100%",
             backgroundColor: "#9debdc",
             marginRight: "10px",
             boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.3)", // Adding shadow
+            boxSizing: "border-box",
         },
     });
 
@@ -115,7 +117,7 @@ export default function AboutPage() {
                                         : "left",
                                 }}
                             >
-                                B.H.M.S.(W.B.U.H.S)
+                                B.H.M.S. (W.B.U.H.S)
                                 {!isSmallScreen && (
                                     <Divider
                                         orientation="vertical"
@@ -124,7 +126,8 @@ export default function AboutPage() {
                                     />
                                 )}
                                 {isSmallScreen && <br />}
-                                Regd. No. - 34680 (WBCHM)
+                                Regd. No. - 34680 <br />
+                                (Council of Homoeopathic Medicine, W.B.)
                             </Box>
                         </Typography>
                         <Typography
@@ -151,7 +154,7 @@ export default function AboutPage() {
                                 }}
                             >
                                 <ListItem sx={listItemStyles()}>
-                                    <ListItemText primary="Metropolitan Homoeopathic Medical College & Hospital" />
+                                    <ListItemText primary="Metropolitan Homoeopathic Medical College & Hospital, Kolkata" />
                                 </ListItem>
                                 <ListItem sx={listItemStyles()}>
                                     <ListItemText primary="SNPH (Annexure 2, IPGMER), Kolkata" />

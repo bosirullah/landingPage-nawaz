@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import HomePage from "../components/Home";
 import Testimonials from "../components/Testimonials";
-import AboutPage from "./about/page";
+import About from "./about/page";
 import ChambersPage from "@/components/Chambers";
 import LocationMap from "@/components/LocationMap";
 
@@ -10,7 +10,7 @@ export default function Page() {
         <Box>
             <HomePage />
             <hr />
-            <AboutPage />
+            <About />
             <hr />
             <ChambersPage />
             <hr />
