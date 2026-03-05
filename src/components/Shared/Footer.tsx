@@ -18,7 +18,7 @@ export default function Footer() {
                     <Grid item xs={12} md={4}>
                         <Typography variant="h6" gutterBottom>
                             <Image
-                                src="/assets/logo.jpeg"
+                                src="/assets/logo3.jpeg"
                                 alt="Logo"
                                 width={80}
                                 height={80}
@@ -126,8 +126,8 @@ export default function Footer() {
                     }}
                 >
                     <Typography variant="body2" color="inherit">
-                        &copy; {new Date().getFullYear()} Dr. Nawaz Sarif. All
-                        rights reserved.
+                        &copy; {new Date().getFullYear()} House of Homoeopatht".
+                        All rights reserved.
                     </Typography>
                 </Box>
             </Container>

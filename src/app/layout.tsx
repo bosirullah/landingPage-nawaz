@@ -11,8 +11,8 @@ import { MyProvider } from "../context";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Dr. Nawaz Sarif",
-    description: "General Homoeopathic Physician",
+    title: "House of Homoeopatht",
+    description: "House of Homoeopathy",
 };
 
 export default function RootLayout({
