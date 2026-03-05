@@ -53,7 +53,8 @@ export default function Home() {
                         letterSpacing: 2,
                     }}
                 >
-                    Dr. Nawaz&apos;s Homoeopathy Health Care
+                    {/* Dr. Nawaz&apos;s Homoeopathy Health Care */}
+                    House of Homoeopathy
                 </Typography>
                 <Typography
                     maxWidth="600px"

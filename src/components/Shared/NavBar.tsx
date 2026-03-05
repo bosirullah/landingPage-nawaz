@@ -142,10 +142,10 @@ function ResponsiveAppBar() {
                             }}
                         >
                             <Image
-                                src="/assets/logo.jpeg"
+                                src="/assets/logo3.jpeg"
                                 alt="Logo"
-                                width={80}
-                                height={80}
+                                width={100}
+                                height={100}
                                 style={{
                                     borderRadius: "100%",
                                     objectFit: "contain",

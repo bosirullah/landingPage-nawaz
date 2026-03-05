@@ -14,8 +14,8 @@ import {
 } from "@mui/material";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
-import { fadeIn } from "@/utils/motion";
-import { useInView } from "@/utils/customHooks/useInView";
+import { fadeIn } from "../utils/motion";
+import { useInView } from "../utils/customHooks/useInView";
 import Image from "next/image";
 
 export default function AboutPage() {
@@ -25,7 +25,7 @@ export default function AboutPage() {
     const [setRef, inView] = useInView({ threshold: 0.1 });
 
     const handleAboutButttonClick = () => {
-        console.log("hello")
+        console.log("hello");
         router.push("/aboutDetails");
     };
 
